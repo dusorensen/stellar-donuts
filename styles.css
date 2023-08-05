@@ -64,6 +64,22 @@ nav {
     gap: 15px;
 }
 
+#contato:hover {
+    opacity: .8;
+}
+
+#cardapio:hover {
+    opacity: .8;
+}
+
+#contato:active {
+    opacity: .5;
+}
+
+#cardapio:active {
+    opacity: .5;
+}
+
 .logo img {
     height: 100%;
 }
@@ -152,7 +168,6 @@ main {
 .card-img img:nth-of-type(2):hover {
     transform: rotate(-5deg);
     scale: 115%;
-    
 }
 
 a {
