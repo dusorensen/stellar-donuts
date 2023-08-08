@@ -295,8 +295,24 @@ a {
         width: 40%;
     }
 }
-
 @media (max-width: 900px) {
+    .card-desc h1 {
+        font-size: 20px;
+    }
+
+    .card-desc p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 700px) {
+    .card-desc h1 {
+        font-size: 25px;
+    }
+
+    .card-desc p {
+        font-size: 15px;
+    }
+    
     .titulo {
         display: none;
     }
@@ -378,17 +394,8 @@ a {
     }
 
     .card-desc {
-        padding: 5px;
+        padding: 10px;
         width: 40%;
-    }
-
-    .card-desc h1 {
-        padding-top: 10px;
-        font-size: 20px;
-    }
-
-    .card-desc p {
-        font-size: 12px;
     }
 
     .titulo-mob h1 {
@@ -397,7 +404,15 @@ a {
 
     .logo {
         padding: 20px 0;
+    } 
+}
+
+@media (max-width: 500px) {
+    .card-desc h1 {
+        font-size: 20px;
     }
 
-   
+    .card-desc p {
+        font-size: 12px;
+    }
 }
