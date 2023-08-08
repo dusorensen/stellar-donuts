@@ -187,7 +187,7 @@ a {
     display: none;
 }
 
-.titulo-cardapio {
+#titulo-cardapio {
     width: 100%;
     padding-bottom: 10px;
     display: flex;
@@ -197,7 +197,7 @@ a {
     flex-flow: row wrap;
 }
 
-.titulo-cardapio h1 {
+#titulo-cardapio h1 {
     text-shadow: 0.1em 0.1em 0.1em rgb(31, 31, 31);
     text-align: center;
     font-family: 'Amatic SC', cursive;
@@ -268,10 +268,6 @@ a {
     flex-grow: 1;
 }
 
-footer {
-    background-color: BLACK;
-    height: 20vh;
-}
 @media (max-width: 1500px) {
     .card-desc {
         padding: 15px;
@@ -333,8 +329,11 @@ footer {
 }
 
 @media (max-width: 650px) {
+    .banner h1 {
+        font-size: 45px;
+    }
     .card-img {
-        width: 40%;
+        width: 50%;
     }
 
     .card-img img:nth-of-type(2) {
@@ -360,8 +359,8 @@ footer {
 @media (max-width: 600px) {
     a {
         display: flex;
-        flex-flow: column wrap;
-        font-size: 10px;
+        flex-direction: column;
+        font-size: 13px;
         padding-right: 10px;
     }
 
@@ -380,7 +379,7 @@ footer {
 
     .card-desc {
         padding: 5px;
-        width: 50%;
+        width: 40%;
     }
 
     .card-desc h1 {
@@ -400,8 +399,5 @@ footer {
         padding: 20px 0;
     }
 
-    header {
-        padding: 0 5px;
-    }
-
+   
 }
