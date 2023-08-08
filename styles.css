@@ -288,15 +288,14 @@ a {
 
 footer {
     padding: 20px;
-    padding-bottom: 0px;
     text-align: center;
     justify-content: center;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     gap: 50px;
     align-items: center;
     width: 100vw;
-    height: 15vh;
+    max-height: 300px;
     background: linear-gradient(to right, #b662b3, #9475b3, #5e96aa);
     background-size: 500% 100%;
     animation: degrade 10s infinite;
@@ -304,6 +303,7 @@ footer {
 }
 
 footer img {
+    margin-bottom: 10px;
     max-width: 50px;
 }
 
@@ -317,7 +317,7 @@ footer img {
 }
 
 .contato-whatsapp {
-    width: 42px;
+    width: 35px;
 }
 
 .contato-email {
@@ -621,5 +621,22 @@ footer img {
         display: flex;
         flex-flow: column nowrap;
         flex-grow: 1;
+    }
+}
+
+@media (max-width: 360px) {
+    #footer a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 300px) {
+    .card-desc h1 {
+        font-size: 12px;
+    }
+
+    .card-desc p {
+        line-height: 12px;
+        font-size: 10px;
     }
 }
