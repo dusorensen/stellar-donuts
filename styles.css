@@ -100,6 +100,11 @@ main {
     max-width: 1400px;
 }
 
+main, body, html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 160px;
+}
+
 .intro {
     margin: 20px 0;
 }
@@ -213,6 +218,7 @@ a {
     overflow: hidden;
     border-radius: 20px;
     background-image: url(./images/Design\ sem\ nome.png);
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
@@ -231,11 +237,12 @@ a {
 }
 
 .card-cardapio, .card-valores {
+    backdrop-filter: blur(2px);
     background: rgba(8, 8, 8, 0.342)
 }
 
 .card-cardapio h1, .card-valores h1 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -243,9 +250,9 @@ a {
 }
 
 .card-cardapio ul {
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .card-valores {
@@ -267,6 +274,37 @@ a {
     align-self: stretch;
     flex-grow: 1;
 }
+
+footer {
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background: linear-gradient(to right, #b662b3, #9475b3, #5e96aa);
+    background-size: 500% 100%;
+    animation: degrade 10s infinite;
+    padding: 0 30px;
+    animation-direction: alternate-reverse;
+}
+
+#footer img {
+    max-width: 50px;
+}
+
+.contato-instagram {
+    width: 30px;
+}
+
+.contato-whatsapp {
+    width: 42px;
+}
+
+.contato-email {
+    width: 35px;
+}
+
 
 @media (max-width: 1500px) {
     .card-desc {
