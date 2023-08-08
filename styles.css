@@ -444,6 +444,16 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .card-desc-cardapio-especiais {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
     #titulo-cardapio h1 {
         font-size: 40px;
     }
@@ -520,6 +530,20 @@ footer {
     .logo {
         padding: 20px 0;
     } 
+
+    .card-desc-cardapio-especiais h1 {
+        font-size: 15px;
+    }
+
+    .coberturas-especiais {
+        display: flex;
+        flex-direction: column wrap;
+    }
+
+    .recheios-especiais {
+        display: flex;
+        flex-flow: column wrap;
+    }
 }
 
 @media (max-width: 500px) {
