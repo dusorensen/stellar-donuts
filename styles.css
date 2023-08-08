@@ -218,6 +218,8 @@ a {
     overflow: hidden;
     border-radius: 20px;
     background-image: url(./images/Design\ sem\ nome.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-evenly;
