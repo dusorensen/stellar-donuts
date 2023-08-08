@@ -52,12 +52,18 @@ header h1 {
 
 .logo,
 .logo img {
+    transition: all 1s;
     height: 100%;
     padding: 5px
 }
 
 .logo {
+    transition: all 1s;
     width: 256px;
+}
+
+.logo:hover {
+    scale: 80%;
 }
 
 nav {
@@ -315,6 +321,7 @@ footer img {
 .contato-instagram {
     width: 30px;
 }
+
 
 .contato-whatsapp {
     width: 35px;
