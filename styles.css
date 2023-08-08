@@ -114,11 +114,11 @@ main {
 }
 
 .banner h1 {
+    text-shadow: 0.1em 0.1em 0.1em grey;
     text-align: center;
     font-family: 'Amatic SC', cursive;
     color: white;
     font-size: 60px;
-    border-bottom: 2px solid white;
     width: fit-content;
     text-align: center;
     line-height: 1;
@@ -130,6 +130,7 @@ main {
     justify-content: space-evenly;
     gap: 20px;
     flex-flow: row wrap;
+    margin-bottom: 70px;
 }
 
 .card {
@@ -167,7 +168,7 @@ main {
 
 .card-desc {
     width: calc(100% - 450px);
-    padding: 10px;
+    padding: 15px;
     z-index: 4;
     align-self: stretch;
     flex-grow: 1;
@@ -186,11 +187,117 @@ a {
     display: none;
 }
 
-#cardapio {
-    border-top: 10px solid white;
-    height: 100vh;
-    background-color: rgba(255, 222, 255, 0.651);
+.titulo-cardapio {
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
 
+.titulo-cardapio h1 {
+    text-shadow: 0.1em 0.1em 0.1em rgb(31, 31, 31);
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 60px;
+    width: fit-content;
+    text-align: center;
+    line-height: 1;
+}
+
+#cards-cardapio{
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url(./images/Design\ sem\ nome.png);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-flow: row wrap;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.card-cardapio {
+    width: calc((100% / 3) - 15px);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.card-cardapio, .card-valores {
+    background: rgba(8, 8, 8, 0.342)
+}
+
+.card-cardapio h1, .card-valores h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.card-cardapio ul {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.card-valores {
+    padding: 30px;
+    padding-top: 8px;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card-desc-cardapio {
+    width: calc(100% - 450px);
+    padding: 10px;
+    z-index: 4;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: BLACK;
+    height: 20vh;
+}
+@media (max-width: 1500px) {
+    .card-desc {
+        padding: 15px;
+    }
+    .card-desc h1 {
+        font-size: 25px;
+    }
+
+    .card-desc p {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .card-img {
+        width: 50%;
+    }
+
+    .card-img img:nth-of-type(2) {
+        width: 100%;
+    }
+
+    .card-desc {
+        width: 40%;
+    }
 }
 
 @media (max-width: 900px) {
@@ -226,6 +333,17 @@ a {
 }
 
 @media (max-width: 650px) {
+    .card-img {
+        width: 40%;
+    }
+
+    .card-img img:nth-of-type(2) {
+        width: 100%;
+    }
+
+    .card-desc {
+        width: 40%;
+    }
     .titulo-mob h1 {
         font-size: 30px;
     }
@@ -239,9 +357,43 @@ a {
     }
 }
 
-@media (max-width: 450px) {
-    .titulo-mob h1 {
+@media (max-width: 600px) {
+    a {
+        display: flex;
+        flex-flow: column wrap;
+        font-size: 10px;
+        padding-right: 10px;
+    }
+
+    .banner {
+        padding: 40px;
+    }
+
+    .banner h1 {
+        font-size: 35px;
+    }
+    
+
+    .card-img {
+        width: 50%;
+    }
+
+    .card-desc {
+        padding: 5px;
+        width: 50%;
+    }
+
+    .card-desc h1 {
+        padding-top: 10px;
         font-size: 20px;
+    }
+
+    .card-desc p {
+        font-size: 12px;
+    }
+
+    .titulo-mob h1 {
+        font-size: 24px;
     }
 
     .logo {
@@ -250,21 +402,6 @@ a {
 
     header {
         padding: 0 5px;
-    }
-
-    header a {
-        font-size: 14px;
-    }
-
-}
-
-@media (max-width: 420px) {
-    .card {
-        flex-flow: column nowrap;
-    }
-
-    .card .img {
-        width: 100%;
     }
 
 }
