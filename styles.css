@@ -180,6 +180,11 @@ main, body, html {
     flex-grow: 1;
 }
 
+.card-desc h1 {
+    line-height: 100%;
+    margin-bottom: 5px;
+}
+
 .card-img img:nth-of-type(2):hover {
     transform: rotate(-5deg);
     scale: 115%;
@@ -278,21 +283,29 @@ a {
 }
 
 footer {
+    padding: 20px;
+    padding-bottom: 0px;
+    text-align: center;
     justify-content: center;
-    gap: 20px;
     display: flex;
+    flex-flow: row wrap;
+    gap: 50px;
     align-items: center;
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
     background: linear-gradient(to right, #b662b3, #9475b3, #5e96aa);
     background-size: 500% 100%;
     animation: degrade 10s infinite;
-    padding: 0 30px;
     animation-direction: alternate-reverse;
 }
 
-#footer img {
+footer img {
     max-width: 50px;
+}
+
+.instagram .whatsapp .email {
+    justify-content: center;
+    display: flex;
 }
 
 .contato-instagram {
@@ -307,22 +320,17 @@ footer {
     width: 35px;
 }
 
-
-@media (max-width: 1500px) {
-    .card-desc {
+@media (max-width: 1200px) {
+        .card-desc {
         padding: 15px;
     }
     .card-desc h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .card-desc p {
-        font-size: 15px;
+        font-size: 13px;
     }
-
-}
-
-@media (max-width: 1200px) {
     .card-img {
         width: 50%;
     }
@@ -337,6 +345,10 @@ footer {
 }
 
 @media (max-width: 900px) {
+    .card-desc h1 {
+        font-size: 20px;
+    }
+
     #titulo-cardapio h1 {
         font-size: 50px;
     }
@@ -377,7 +389,7 @@ footer {
     }
 
     .card-desc h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .card-desc p {
@@ -444,11 +456,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .card-desc-cardapio-especiais {
-        display: flex;
-        flex-flow: row nowrap;
-    }
-
+   
     footer {
         display: flex;
         flex-flow: column wrap;
@@ -531,22 +539,27 @@ footer {
         padding: 20px 0;
     } 
 
+    .card-desc-cardapio-especiais {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 10%;
+    }
+
     .card-desc-cardapio-especiais h1 {
-        font-size: 15px;
+        font-size: 13px;
     }
 
-    .coberturas-especiais {
+    .coberturas-especiais .recheios-especiais {
         display: flex;
-        flex-direction: column wrap;
-    }
-
-    .recheios-especiais {
-        display: flex;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
+        flex-grow: 1;
     }
 }
 
 @media (max-width: 500px) {
+   
+
     #titulo-cardapio h1 {
         font-size: 40px;
     }
@@ -561,7 +574,7 @@ footer {
         padding-bottom: 5px;
     }
 
-    .card-cardapio h1, .card-valores h1 {
+    .card-cardapio h1 {
         font-size: 18px;
         margin-bottom: 2px;
         display: flex;
@@ -569,17 +582,33 @@ footer {
         padding: 8px;
     }
 
-    .card-valores h2 {
-        font-size: 18px;
-        margin-bottom: 2px;
-        display: flex;
-        padding: 8px;
-    }
     .card-desc h1 {
         font-size: 20px;
     }
 
     .card-desc p {
         font-size: 12px;
+    }
+
+    .card-desc-cardapio-especiais {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 10%;
+        
+    }
+
+    .card-desc-cardapio-especiais h1 {
+        text-align: center;
+    }
+
+    .card-desc-cardapio-especiais h1 {
+        font-size: 13px;
+    }
+
+    .coberturas-especiais .recheios-especiais {
+        display: flex;
+        flex-flow: column nowrap;
+        flex-grow: 1;
     }
 }
