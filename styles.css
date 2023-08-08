@@ -15,6 +15,7 @@ a {
 }
 
 body {
+    overflow-x: hidden;
     background: linear-gradient(150deg, rgba(97, 205, 255, 0.295), rgba(218, 98, 255, 0.247), rgba(84, 229, 255, 0.212), rgba(157, 243, 136, 0.247));
 }
 
@@ -335,7 +336,36 @@ footer {
         width: 40%;
     }
 }
+
 @media (max-width: 900px) {
+    
+    .card-cardapio ul {
+        font-size: 18px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    .card-desc-cardapio p, li {
+        font-size: 12px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+    }
+
+    .card-cardapio h1, .card-valores h1 {
+        font-size: 15px;
+        margin-bottom: 2px;
+        display: flex;
+        justify-content: center;
+        padding: 8px;
+    }
+
+    .card-valores h2 {
+        font-size: 15px;
+        margin-bottom: 2px;
+        display: flex;
+        padding: 8px;
+    }
+    
     .card-desc h1 {
         font-size: 20px;
     }
@@ -343,6 +373,7 @@ footer {
     .card-desc p {
         font-size: 12px;
     }
+
 }
 @media (max-width: 700px) {
     .card-desc h1 {
@@ -414,8 +445,6 @@ footer {
 
 @media (max-width: 600px) {
     a {
-        display: flex;
-        flex-direction: column;
         font-size: 13px;
         padding-right: 10px;
     }
