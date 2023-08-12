@@ -67,11 +67,12 @@ header h1 {
 }
 
 nav {
+    font-weight: 600;
     justify-content: center;
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-end;
-    gap: 5px;
+    gap: 20px;
 }
 
 #contato-nav:hover {
