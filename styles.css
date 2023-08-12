@@ -67,11 +67,11 @@ header h1 {
 }
 
 nav {
+    justify-content: center;
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    gap: 5px;
 }
 
 #contato-nav:hover {
@@ -100,11 +100,31 @@ nav {
     width: 158px;
 }
 
+.sorteio {
+    margin-top: 3vw;
+    max-width: 1400px;
+}
+
+.sorteio img {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+}
+
 main {
     width: 100%;
     padding: 80px 20px;
     margin: 0 auto;
     max-width: 1400px;
+    max-height: 60%;
+}
+
+.background {
+    border-radius: 30px;
+    padding: 20px;
+    background-image: url(./images/Design\ sem\ nome.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 main,
@@ -115,12 +135,15 @@ html {
 }
 
 .intro {
+
     margin: 20px 0;
+    border-radius: 30px;
 }
 
 
 .banner {
     padding: 50px;
+    padding-top: 10px;
     display: flex;
     height: fit-content;
     align-items: center;
@@ -128,6 +151,9 @@ html {
 }
 
 .banner h1 {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.199);
     text-shadow: 0.1em 0.1em 0.1em grey;
     text-align: center;
     font-family: 'Amatic SC', cursive;
@@ -153,7 +179,7 @@ html {
     overflow: hidden;
     display: flex;
     flex-flow: row nowrap;
-    background: rgba(0, 0, 0, 0.199)
+    background: rgba(0, 0, 0, 0.616)
 }
 
 
@@ -227,13 +253,12 @@ a {
     line-height: 1;
 }
 
+
+
 #cards-cardapio {
     padding: 20px;
     overflow: hidden;
     border-radius: 20px;
-    background-image: url(./images/Design\ sem\ nome.png);
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
@@ -290,6 +315,14 @@ a {
     z-index: 4;
     align-self: stretch;
     flex-grow: 1;
+}
+
+.separacao {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 20px;
+    background: white;
 }
 
 footer {
