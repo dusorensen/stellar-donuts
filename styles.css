@@ -100,25 +100,80 @@ nav {
     width: 158px;
 }
 
-
-
 main {
     width: 100%;
     padding: 150px 20px;
+    padding-bottom: 50px;
     margin: 0 auto;
     max-width: 1400px;
     max-height: 60%;
 }
 
 .sorteio {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/sorteio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 20px;
     max-width: 1400px;
-}
-
-.sorteio img {
     border-radius: 30px;
     width: 100%;
-    height: auto;
+    padding: 20px;
+    gap: 10px;
+}
+
+.sorteio-desc img {
+    padding: 20px;
+    width: 400px;
+}
+
+.sorteio-desc {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sorteio-desc p {
+    padding: 15px;
+    font-size: 18px;
+    width: 80%;
+    border-radius: 30px;
+    color: black;
+    background-color: #FCB4BC;
+    text-indent: 5px;
+}
+
+.sorteio-desc button {
+    font-weight: 600;
+    font-size: 18px;
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 18px;
+    padding: 8px;
+    background-color: #E1FFE9;
+    border: none;
+    color: black;
+}
+
+.sorteio-img {
+    display: flex;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sorteio-img img{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border-radius: 50px;
 }
 
 .background {
@@ -151,7 +206,8 @@ html {
 
 .banner h1 {
     padding: 20px;
-    text-shadow: 0.1em 0.1em 0.1em grey;
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 30px;
     text-align: center;
     font-family: 'Amatic SC', cursive;
     color: white;
@@ -241,7 +297,9 @@ a {
 }
 
 #titulo-cardapio h1 {
-    text-shadow: 0.1em 0.1em 0.1em rgb(31, 31, 31);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 30px;
     text-align: center;
     font-family: 'Amatic SC', cursive;
     color: white;
@@ -276,22 +334,13 @@ a {
 
 .card-cardapio,
 .card-valores {
-    backdrop-filter: blur(2px);
-    background: rgba(8, 8, 8, 0.342)
-}
-
-.card-cardapio h1,
-.card-valores h1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    padding: 8px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.616)
 }
 
 .card-cardapio ul {
     font-size: 18px;
-    padding-left: 50px;
+    padding-left: 30px;
     padding-bottom: 10px;
 }
 
@@ -307,12 +356,21 @@ a {
     flex-flow: row wrap;
 }
 
-.card-desc-cardapio {
-    width: calc(100% - 450px);
+
+.card-cardapio h1,
+.card-valores h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
-    z-index: 4;
-    align-self: stretch;
-    flex-grow: 1;
+    text-align: center;
+}
+
+.card-valores h2 {
+    font-size: 18px;
+    padding-bottom: 4px;
 }
 
 .separacao {
@@ -337,7 +395,7 @@ footer {
     flex-flow: row nowrap;
     gap: 50px;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     max-height: 300px;
     background: linear-gradient(to right, #b662b3, #9475b3, #5e96aa);
     background-size: 500% 100%;
@@ -369,6 +427,8 @@ footer img {
 }
 
 @media (max-width: 1200px) {
+    
+
     .card-desc {
         padding: 15px;
     }
@@ -395,6 +455,24 @@ footer img {
 }
 
 @media (max-width: 900px) {
+
+    .sorteio-desc{
+        margin-right: 20px;
+    }
+    
+    .sorteio-desc img {
+        width: 250px;
+    }
+    
+    .sorteio-desc p {
+        font-size: 13px;
+        width: 100%;
+    }
+    
+    .sorteio-img img{
+        width: 250px;
+    }
+
     .card-desc h1 {
         font-size: 20px;
     }
@@ -433,6 +511,7 @@ footer img {
 }
 
 @media (max-width: 700px) {
+
     #cards-cardapio {
         background-image: url(./images/Design\ sem\ nome\ \(1\).png);
         background-position: center;
@@ -511,6 +590,33 @@ footer img {
 }
 
 @media (max-width: 600px) {
+    .sorteio {
+        flex-flow: column wrap;
+    }
+
+    .sorteio-desc {
+        width: 90%;
+    }
+
+    .sorteio-desc img {
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.336);
+        border-radius: 30px;
+        margin-bottom: 10px;
+        width: 250px;
+    }
+    
+    .sorteio-desc p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .sorteio-img img{
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        border-radius: 50px;
+    }
 
     #titulo-cardapio h1 {
         font-size: 40px;
@@ -568,7 +674,7 @@ footer img {
     }
 
     .banner {
-        padding: 40px;
+        padding: 10px;
     }
 
     .banner h1 {
@@ -612,7 +718,10 @@ footer img {
 }
 
 @media (max-width: 500px) {
-
+    .sorteio-desc p {
+        font-size: 15px;
+        width: 100%;
+    }
 
     #titulo-cardapio h1 {
         font-size: 40px;
