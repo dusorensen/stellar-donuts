@@ -606,7 +606,7 @@ footer img {
 }
 
 @media (max-width: 600px) {
-    .sorteio {
+    #sorteio {
         flex-flow: column wrap;
     }
 
