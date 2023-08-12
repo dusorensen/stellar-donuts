@@ -100,8 +100,18 @@ nav {
     width: 158px;
 }
 
+
+
+main {
+    width: 100%;
+    padding: 150px 20px;
+    margin: 0 auto;
+    max-width: 1400px;
+    max-height: 60%;
+}
+
 .sorteio {
-    margin-top: 3vw;
+    margin-bottom: 20px;
     max-width: 1400px;
 }
 
@@ -109,14 +119,6 @@ nav {
     border-radius: 30px;
     width: 100%;
     height: auto;
-}
-
-main {
-    width: 100%;
-    padding: 80px 20px;
-    margin: 0 auto;
-    max-width: 1400px;
-    max-height: 60%;
 }
 
 .background {
@@ -138,20 +140,17 @@ html {
     border-radius: 30px;
 }
 
-
 .banner {
-    padding: 50px;
-    padding-top: 10px;
+    padding: 30px;
     display: flex;
     height: fit-content;
     align-items: center;
     justify-content: center;
+
 }
 
 .banner h1 {
     padding: 20px;
-    border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.199);
     text-shadow: 0.1em 0.1em 0.1em grey;
     text-align: center;
     font-family: 'Amatic SC', cursive;
