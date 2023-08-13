@@ -325,8 +325,6 @@ a {
     line-height: 1;
 }
 
-
-
 #cards-cardapio {
     border-radius: 30px;
     padding: 20px;
@@ -405,6 +403,7 @@ a {
 
 footer {
     padding: 20px;
+    padding-bottom: 10px;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -412,6 +411,7 @@ footer {
     gap: 50px;
     align-items: center;
     width: 100%;
+    height: fit-content;
     max-height: 300px;
     background: linear-gradient(to right, #b662b3, #9475b3, #5e96aa);
     background-size: 500% 100%;
@@ -607,11 +607,19 @@ footer img {
 
 @media (max-width: 600px) {
     #sorteio {
+        width: 100%;
+        gap: 0px;
         flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     .sorteio-desc {
-        width: 90%;
+        gap: 0px;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     .sorteio-desc img {
@@ -703,6 +711,7 @@ footer img {
     }
 
     .card-desc {
+        line-height: 18px;
         padding: 10px;
         width: 40%;
     }
@@ -733,7 +742,15 @@ footer img {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
+    .cards {
+        padding: 10px;
+    }
+
+    #cards-cardapio{
+        padding: 10px;
+    }
+
     .sorteio-desc p {
         font-size: 15px;
         width: 100%;
@@ -763,11 +780,12 @@ footer img {
     }
 
     .card-desc h1 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .card-desc p {
-        font-size: 12px;
+        line-height: 14px;
+        font-size: 10px;
     }
 
     .card-desc-cardapio-especiais {
