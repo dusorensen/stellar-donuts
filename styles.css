@@ -471,6 +471,9 @@ footer img {
 }
 
 @media (max-width: 900px) {
+    .card {
+        width: 100%;
+    }
 
     .sorteio-desc{
         margin-right: 20px;
@@ -490,7 +493,11 @@ footer img {
     }
 
     .card-desc h1 {
-        font-size: 20px;
+        font-size: 30px;
+    }
+
+    .card-desc p {
+        font-size: 18px;
     }
 
     #titulo-cardapio h1 {
@@ -742,9 +749,9 @@ footer img {
     }
 }
 
-@media (max-width: 510px) {
-    .cards {
-        padding: 10px;
+@media (max-width: 500px) {
+    footer {
+        padding-bottom: 0px;
     }
 
     #cards-cardapio{
@@ -785,7 +792,7 @@ footer img {
 
     .card-desc p {
         line-height: 14px;
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .card-desc-cardapio-especiais {
@@ -809,6 +816,12 @@ footer img {
         flex-flow: column nowrap;
         flex-grow: 1;
     }
+}
+
+@media (max-width: 400px){
+.card-desc p {
+    line-height: 14px;
+    font-size: 10px;
 }
 
 @media (max-width: 360px) {
