@@ -52,18 +52,25 @@ header h1 {
 
 .logo,
 .logo img {
-    transition: all 1s;
     height: 100%;
     padding: 5px
 }
 
 .logo {
-    transition: all 1s;
     width: 256px;
 }
 
-.logo:hover {
-    scale: 80%;
+.logo img:hover {
+    animation: tremer .27s;
+    animation-iteration-count: 2;
+}
+
+@keyframes tremer {
+    0% {margin-left: 0;}
+    25% {margin-left: 7px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -7px;}
+    100% {margin-left: 0;}
 }
 
 nav {
@@ -110,46 +117,53 @@ main {
     max-height: 60%;
 }
 
-#sorteio {
+#topo {
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/sorteio.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 20px;
     max-width: 1400px;
     border-radius: 30px;
     width: 100%;
     padding: 20px;
-    gap: 10px;
 }
 
-.sorteio-desc img {
-    padding: 20px;
-    width: 400px;
+.topo-titulo {
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1;
 }
 
-.sorteio-desc {
+.topo-desc {
+    width: 60%;
     display: flex;
     flex-flow: column nowrap;
-    width: 50%;
     justify-content: center;
     align-items: center;
 }
 
-.sorteio-desc p {
-    padding: 15px;
+.topo-desc p {
+    padding: 20px;
     font-size: 18px;
     width: 80%;
     border-radius: 30px;
     color: black;
     background-color: #FCB4BC;
     text-indent: 10px;
+    margin-bottom: 20px;
 }
 
-.sorteio-desc button {
+.topo-desc button {
     cursor: pointer;
     font-weight: 600;
     font-size: 18px;
@@ -163,29 +177,36 @@ main {
     color: black;
 }
 
-.sorteio-desc button:hover {
+.topo-desc button:hover {
     transition: all 0.2s;
     scale: 105%;
 }
 
-.sorteio-desc button:active {
+.topo-desc button:active {
     transition: all 0.2s;
     scale: 95%;
 }
 
-.sorteio-img {
+.topo-img {
+    padding: 20px;
+    width: 50%;
+    gap: 10px;
     display: flex;
-    width: 35%;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
 }
 
-.sorteio-img img{
+.topo-img img {
     padding: 10px;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    border-radius: 50px;
+    width: 400px;
+    border-radius: 40px;
+}
+
+.topo-img img:hover {
+    scale: 110%;
 }
 
 .background {
@@ -207,7 +228,7 @@ html {
     border-radius: 30px;
 }
 
-.banner {
+#banner {
     padding: 30px;
     display: flex;
     height: fit-content;
@@ -216,7 +237,7 @@ html {
 
 }
 
-.banner h1 {
+#banner h1 {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.616);
     border-radius: 30px;
@@ -443,7 +464,7 @@ footer img {
 }
 
 @media (max-width: 1200px) {
-    
+
 
     .card-desc {
         padding: 15px;
@@ -475,20 +496,11 @@ footer img {
         width: 100%;
     }
 
-    .sorteio-desc{
-        margin-right: 20px;
-    }
-    
-    .sorteio-desc img {
-        width: 250px;
-    }
-    
-    .sorteio-desc p {
+    .topo-desc p {
         font-size: 13px;
-        width: 100%;
     }
-    
-    .sorteio-img img{
+
+    .topo-img img {
         width: 250px;
     }
 
@@ -575,7 +587,7 @@ footer img {
 }
 
 @media (max-width: 650px) {
-    .banner h1 {
+    #banner h1 {
         font-size: 45px;
     }
 
@@ -602,10 +614,14 @@ footer img {
     header {
         padding: 0 10px;
     }
+
+    #topo button {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 600px) {
-    #sorteio {
+    #topo {
         width: 100%;
         gap: 0px;
         flex-flow: column wrap;
@@ -613,7 +629,7 @@ footer img {
         align-items: center;
     }
 
-    .sorteio-desc {
+    .topo-desc {
         gap: 0px;
         flex-flow: column wrap;
         justify-content: center;
@@ -621,20 +637,12 @@ footer img {
         width: 100%;
     }
 
-    .sorteio-desc img {
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.336);
-        border-radius: 30px;
-        margin-bottom: 10px;
-        width: 250px;
-    }
-    
-    .sorteio-desc p {
+    .topo-desc p {
         font-size: 18px;
         width: 100%;
     }
 
-    .sorteio-img img{
+    .topo-img img {
         justify-content: center;
         align-items: center;
         width: 300px;
@@ -696,11 +704,11 @@ footer img {
         padding-right: 10px;
     }
 
-    .banner {
+    #banner {
         padding: 10px;
     }
 
-    .banner h1 {
+    #banner h1 {
         font-size: 35px;
     }
 
@@ -746,11 +754,11 @@ footer img {
         padding-bottom: 0px;
     }
 
-    #cards-cardapio{
+    #cards-cardapio {
         padding: 10px;
     }
 
-    .sorteio-desc p {
+    .topo-desc p {
         font-size: 15px;
         width: 100%;
     }
@@ -810,25 +818,25 @@ footer img {
     }
 }
 
-@media (max-width: 400px){
-.card-desc p {
-    line-height: 14px;
-    font-size: 10px;
-}
-
-@media (max-width: 360px) {
-    #footer a {
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 300px) {
-    .card-desc h1 {
-        font-size: 12px;
-    }
-
+@media (max-width: 400px) {
     .card-desc p {
-        line-height: 12px;
+        line-height: 14px;
         font-size: 10px;
     }
-}
+
+    @media (max-width: 360px) {
+        #footer a {
+            font-size: 10px;
+        }
+    }
+
+    @media (max-width: 300px) {
+        .card-desc h1 {
+            font-size: 12px;
+        }
+
+        .card-desc p {
+            line-height: 12px;
+            font-size: 10px;
+        }
+    }
