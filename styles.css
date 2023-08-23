@@ -179,8 +179,8 @@ main {
 }
 
 .topo-desc button:hover {
-    transition: all 0.2s;
-    scale: 105%;
+    transition: all 0.5s;
+    scale: 110%;
 }
 
 .topo-desc button:active {
